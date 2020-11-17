@@ -29,7 +29,7 @@ export const BackButton = styled.TouchableOpacity``;
 export const HeaderTitle = styled.Text`
   color: #f5ede8;
   font-family: 'RobotoSlab-Medium';
-  size: 20px;
+  font-size: 20px;
   margin-left: 16px;
 `;
 
@@ -58,7 +58,7 @@ export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
   border-radius: 10px;
 `;
 
-export const ProviderAvatar = styled.View`
+export const ProviderAvatar = styled.Image`
   width: 32px;
   height: 32px;
   border-radius: 16px;

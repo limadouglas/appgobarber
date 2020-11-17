@@ -12,7 +12,7 @@ interface User{
   id: string;
   name: string;
   email: string;
-  avatar_url: string;
+  url_avatar: string;
 }
 
 interface AuthState {
@@ -64,9 +64,7 @@ const AuthProvider: React.FC = ({ children }) => {
       ['@GoBarber:token', token],
       ['@GoBarber:user', JSON.stringify(user)],
     ]);
-
-    api.defaults.headers.authorization = `Bearer ${token[1]}`;
-
+    api.defaults.headers.authorization = `Bearer ${token}`;
     setData({ token, user });
   }, []);
 

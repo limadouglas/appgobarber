@@ -44,25 +44,20 @@ const CreateAppointments: React.FC = ()=> {
     <Container>
       <Header>
         <BackButton onPress={navigateBack}>
-          <Icon name="" size={24} color="#999591"/>
+          <Icon name="chevron-left" size={24} color="#999591"/>
         </BackButton>
         <HeaderTitle>Cabeleireiro</HeaderTitle>
-        <UserAvatar source={{ uri: user.avatar_url }} />
+        <UserAvatar source={{ uri: user.url_avatar }} />
       </Header>
-
-      ProviderListContainer,
-      ProviderList,
-      ProviderContainer,
-      ProviderAvatar,
-      ProviderName,
-
       <ProviderListContainer>
         <ProviderList
+          horizontal
+          showsHorizontalScrollIndicator={false}
           data={providers}
           keyExtractor={(provider)=>provider.id}
           renderItem={({item: provider}) => (
             <ProviderContainer selected={selectedProvider === provider.id} onPress={()=>handleSelectProvider(provider.id)}>
-              <ProviderAvatar>{provider.url_avatar}</ProviderAvatar>
+              <ProviderAvatar source={{uri:provider.url_avatar}} />
               <ProviderName selected={selectedProvider === provider.id}>{provider.name}</ProviderName>
             </ProviderContainer>
           )}

@@ -31,9 +31,10 @@ const Dashboard: React.FC = () => {
   const {navigate} = useNavigation();
 
   useEffect(() => {
-    api.get('providers').then(response=>{
+    api.get('/providers').then(response => {
+      console.log(`providers`,response.data)
       setProviders(response.data);
-    })
+    }).catch(err=> console.log(`error`,err))
   }, [])
 
   const navigateToProfile = useCallback(() => {
@@ -58,7 +59,7 @@ const Dashboard: React.FC = () => {
         </HeaderTitle>
 
         <ProfileButton onPress={navigateToProfile}>
-          <UserAvatar source={{uri: user.avatar_url}}/>
+          <UserAvatar source={{uri: user.url_avatar}}/>
         </ProfileButton>
       </Header>
 
