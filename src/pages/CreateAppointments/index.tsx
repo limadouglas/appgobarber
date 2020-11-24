@@ -59,7 +59,7 @@ const CreateAppointments: React.FC = ()=> {
       const date = new Date(selectedDate);
 
       date.setHours(selectedHour);
-      date.setMilliseconds(0);
+      date.setMinutes(0);
 
       await api.post('appointments', {
         provider_id: selectedProvider,
