@@ -42,8 +42,6 @@ const SignIn: React.FC = () => {
   const passwordInputRef = useRef<TextInput>(null);
   const { signIn, user } = useAuth();
 
-  console.log(user);
-
   const handleSignIn = useCallback(async (data: SignInFormData) => {
     try {
       formRef.current?.setErrors({});
