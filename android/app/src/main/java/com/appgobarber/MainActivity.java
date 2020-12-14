@@ -1,4 +1,4 @@
-package com.appgobarber;
+package com.dhsl.gobarber;
 
 import com.facebook.react.ReactActivity;
 
