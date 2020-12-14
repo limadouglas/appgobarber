@@ -755,7 +755,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhsl.gobarber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhsl.appgobarber;
 				PRODUCT_NAME = appgobarber;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -777,7 +777,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhsl.gobarber;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhsl.appgobarber;
 				PRODUCT_NAME = appgobarber;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
