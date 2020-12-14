@@ -1,4 +1,4 @@
-package com.dhsl.appgobarber;
+package com.dhslappgobarber;
 
 import android.content.Intent;
 import android.os.Bundle;
