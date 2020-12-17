@@ -164,9 +164,15 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            resValue "string", "CodePushDeploymentKey", '""'
+        }
+        releaseStaging {
+          resValue "string", "CodePushDeploymentKey", 'OoBQYNcHsPxCmll6HY97L1xwodaUex7UlDN8P'
+          matchingFallbacks = ['release']
         }
         release {
             // signingConfig signingConfigs.release
+            resValue "string", "CodePushDeploymentKey", '4DrpTzJJtbwzMP-4a6KeP8k5T5litvfblgKyc'
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
